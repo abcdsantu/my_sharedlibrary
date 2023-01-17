@@ -6,7 +6,7 @@ def call(String repoUrl) {
            jdk 'jdk8'
        }
        environment {
-           LAMBDA_TEST_CRED = credentials('lambdatest-site-cred')
+           LAMBDA_TEST_CRED = credentials('santulambdatest')
        }
        stages {
            stage("Tools initialization") {
